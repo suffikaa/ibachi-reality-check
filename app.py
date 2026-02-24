@@ -618,6 +618,19 @@ async function downloadCard() {{
 
 components.html(share_component, height=380)
 
+# Share on X — always visible (especially on mobile)
+st.markdown(
+    '<p style="text-align:center; margin:0.5rem 0 1rem; font-size:0.8rem; color:#71717a;">'
+    "Screenshot the card above, then open the tweet and paste the image (or use Download).</p>",
+    unsafe_allow_html=True,
+)
+st.link_button(
+    "Share on X (open tweet)",
+    tweet_url,
+    type="primary",
+    use_container_width=True,
+)
+
 # ── SCENARIO TABLE ──
 scenarios = [50000000, 200000000, 500000000, 1000000000, 2000000000, 5000000000, 10000000000]
 rows_html = ""
