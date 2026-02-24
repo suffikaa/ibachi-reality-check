@@ -387,7 +387,7 @@ tweet_lines = [
     f"{emoji} My @hibachi_xyz reality check is in.",
     f"",
     f"Are you cooked or cooking? Find out 👇",
-    f"hibachi.xyz",
+    f"https://hibachi.streamlit.app/",
 ]
 tweet_text = urllib.parse.quote("\n".join(tweet_lines))
 tweet_url = f"https://twitter.com/intent/tweet?text={tweet_text}"
@@ -559,7 +559,7 @@ share_component = f"""
   </div>
   <div class="bottom">
     <span class="hint">Are you cooked or cooking?</span>
-    <span class="url">hibachi.xyz</span>
+    <span class="url">hibachi.streamlit.app</span>
   </div>
 </div>
 
